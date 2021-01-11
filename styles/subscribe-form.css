@@ -1,17 +1,33 @@
-#form-container {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
+#subscription-page {
   padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-headline {
+  /* padding-top: 0; */
+  padding-left: 0.5em;
+}
+.form-container {
+  flex: 1;
+  padding: 0;
+  background: #f1faee;
 }
 
 .form-row {
-  width: 500px;
-  background: whitesmoke;
+  display: flex;
+  justify-content: flex-start;
   padding: 0.5em;
 }
 
-/* .row-test {
-  background: #e63946;
-  width: 500px;
-} */
+.form-row > label {
+  flex: 1;
+}
+
+.form-row > input {
+  flex: 4;
+}
+
+label {
+  color: #1d3557;
+}
